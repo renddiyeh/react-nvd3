@@ -40,6 +40,9 @@ var PieWrapper = React.createClass({
           renderEnd={function(chart, e){console.log( chart.id(), e)}}
           renderStart={function(chart, e){console.log( chart.id(), e)}}
           ready={function(chart, e){console.log( chart.id(), e)}}
+          multiLineLabels={true}
+          labelSunbeamLayout={true}
+          labelType={function(d, i, value){return 'ab\nc';}}
         />
       </div>
     )
